@@ -1,53 +1,31 @@
 <template>
   <div>
-    <div class="uk-position-relative">
-      <img
-        src="https://www.yslbeta.com/article/wp-content/uploads/2020/09/Free-People-Well-Traveled-241906ce.jpeg"
-        alt
-      />
-      <div class="uk-position-top">
-        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-          <div class="uk-navbar-left">
-            <ul class="uk-navbar-nav">
-              <li class="uk-active">
-                <a href="#">Active</a>
-              </li>
-              <li>
-                <a href="#">Item</a>
-              </li>
-              <li>
-                <a href="#">Parent</a>
-                <div class="uk-navbar-dropdown">
-                  <ul class="uk-nav uk-navbar-dropdown-nav">
-                    <li class="uk-active">
-                      <a href="#">Active</a>
-                    </li>
-                    <li>
-                      <a href="#">Item</a>
-                    </li>
-                    <li class="uk-nav-header">Header</li>
-                    <li>
-                      <a href="#">Item</a>
-                    </li>
-                    <li>
-                      <a href="#">Item</a>
-                    </li>
-                    <li class="uk-nav-divider"></li>
-                    <li>
-                      <a href="#">Item</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </nav>
+    <div>
+      <div class="uk-position-relative">
+        <img
+          src="https://www.yslbeta.com/article/wp-content/uploads/2020/09/Free-People-Well-Traveled-241906ce.jpeg"
+          alt
+        />
+        <div class="uk-position-top">
+          <TheHeader />
+        </div>
+
+        <div class="uk-container">
+          <h2>This is the Collection Title</h2>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import TheHeader from '@/components/TheHeader/TheHeader'
+
+export default {
+  components: {
+    TheHeader
+  }
+}
 </script>
 
 <style>
