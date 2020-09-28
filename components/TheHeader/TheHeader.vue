@@ -4,8 +4,10 @@
       <nav class="main-nav">
         <div class="uk-navbar-left">
           <ul class="uk-navbar-nav">
-            <nuxt-link to="/" tag="li"><a>Home</a></nuxt-link>
-            <nuxt-link to="/about" tag="li"><a>About</a></nuxt-link>
+            <nuxt-link to="/" tag="li" class="uk-list"><a>Home</a></nuxt-link>
+            <nuxt-link to="/about" tag="li" class="uk-list"
+              ><a>About</a></nuxt-link
+            >
           </ul>
         </div>
       </nav>
@@ -25,7 +27,7 @@ export default {}
   width: 100%;
 }
 
-.uk-navbar-nav.nuxt-link-exact-active a {
+.uk-list.nuxt-link-exact-active a {
   color: #06c4d1;
 }
 </style>
