@@ -1,10 +1,10 @@
 <template>
   <nuxt-link to="id">
     <article class="post-preview">
-      <div class="uk-card uk-card-default uk-card-body ">
-        <div class="uk-card-body">
-          <h3 class="uk-card-title">{{ title }}</h3>
-          <p class="cardtext">{{ excerpt }}</p>
+      <div class="uk-tile uk-tile-default ">
+        <div>
+          <h3>{{ title }}</h3>
+          <p>{{ excerpt }}</p>
         </div>
       </div>
     </article>
@@ -39,5 +39,23 @@ export default {
 <style scoped>
 .post-preview {
   margin: 0.5rem 0.5rem;
+}
+
+.uk-tile {
+  border: 2px solid #999999;
+}
+.uk-tile p {
+  font-size: 1rem;
+  line-height: normal;
+  color: black;
+}
+
+.uk-tile h3 {
+  font-family: 'Georgia', Georgia, serif;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: normal;
+  color: #999999;
 }
 </style>

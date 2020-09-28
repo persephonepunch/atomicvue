@@ -54,6 +54,13 @@ export default {
           thumbnailUrl:
             'https://uploads-ssl.webflow.com/5f0cb248a836dd6c0e0b9d77/5f0cb248a836dd6d7d0bab5a_MTP8407_40_1000x1500.jpg',
           id: 'post-two'
+        },
+        {
+          title: 'This is Title Three',
+          previewText: 'Why does this not render',
+          thumbnailUrl:
+            'https://uploads-ssl.webflow.com/5f0cb248a836dd6c0e0b9d77/5f0cb248a836dd6d7d0bab5a_MTP8407_40_1000x1500.jpg',
+          id: 'post-three'
         }
       ]
     }
@@ -65,7 +72,7 @@ export default {
 #posts {
   padding-top: 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
 }
